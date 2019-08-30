@@ -1,6 +1,6 @@
-# Project Title
+#ABAP Code Quality Analyzer
 
-ABAP Code Quality Analyzer
+Run ABAP unit tests and measures execution and test coverage.
 
 ## Getting Started
 
@@ -58,7 +58,7 @@ Extended SAP Development team of CSS.CH
 
 ## License
 
-This project is licensed under the License APGL 3.0
+This project is licensed under the License AGPL 3.0
 
 ## Acknowledgments
 
