@@ -14,14 +14,16 @@ SAP ABAP NW 7.50 or higher.
 
 ### Installing
 
-Clone this repository into your system using the git client for ABAP.
+Clone this repository into your system using the git client for ABAP. For more information see
 ```
-See https://github.com/larshp/abapGit
+http://abapgit.org
 ```
 
 ## Running the tests of the tool
 
-Start the unit tests for this project by using the SAP standard report RS_AUCV_RUNNER, and enter the package name YCQA.
+Start the unit tests for this project by using the report YCQA_AUNIT_RUNNER, and enter the package name YCQA.
+
+For displaying the results of test run start the report YCQA_AUNIT_GUI.
 
 ## Built With
 
@@ -48,7 +50,7 @@ Examples of unacceptable behavior by participants include:
 
 ## Versioning
 
-Version 1.0 
+Version 0.1 Alpha
 
 ## Authors
 
@@ -56,15 +58,11 @@ Extended SAP Development team of CSS.CH
 
 ## License
 
-This project is licensed under the MIT License APGL 3.0
+This project is licensed under the License APGL 3.0
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
-To be developed:
+Future Features:
 * Code Inspector Analyzer (SCI)
 * Code Coverage Analyzer (SCOV)
 
