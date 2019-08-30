@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>YIF_CQA_AUNIT_SERVICE_API</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>Unit Test Data External Accessor</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>YIF_CQA_AUNIT_SERVICE_API</CLSNAME>
+     <CMPNAME>READ_BY_PACKAGE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Liefert Unit Test-Daten zu genau einem Paket</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

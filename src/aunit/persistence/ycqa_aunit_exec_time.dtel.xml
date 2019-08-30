@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>YCQA_AUNIT_EXEC_TIME</ROLLNAME>
+    <DDLANGUAGE>D</DDLANGUAGE>
+    <DOMNAME>UZEIT</DOMNAME>
+    <HEADLEN>08</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>15</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Ausführungszeit</DDTEXT>
+    <REPTEXT>AusfZeit</REPTEXT>
+    <SCRTEXT_S>Ausf.-Zeit</SCRTEXT_S>
+    <SCRTEXT_M>Ausf.-Zeit</SCRTEXT_M>
+    <SCRTEXT_L>Ausführungszeit</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>E</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DDTEXT>Time of Execution</DDTEXT>
+     <REPTEXT>ExecTime</REPTEXT>
+     <SCRTEXT_S>Exec. Time</SCRTEXT_S>
+     <SCRTEXT_M>Execution Time</SCRTEXT_M>
+     <SCRTEXT_L>Time of Execution</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>YCQA_COV_BRANCH_TOTAL</ROLLNAME>
+    <DDLANGUAGE>D</DDLANGUAGE>
+    <HEADLEN>11</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>15</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Zweigabdeckung gesamt</DDTEXT>
+    <REPTEXT>Zweig ges.</REPTEXT>
+    <SCRTEXT_S>Zweig ges.</SCRTEXT_S>
+    <SCRTEXT_M>Zweig gesamt</SCRTEXT_M>
+    <SCRTEXT_L>Zweigabd. gesamt</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <DATATYPE>INT4</DATATYPE>
+    <LENG>000010</LENG>
+    <OUTPUTLEN>000011</OUTPUTLEN>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>E</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DDTEXT>Branch Coverage: Total Number of Branches</DDTEXT>
+     <REPTEXT>Br. Total</REPTEXT>
+     <SCRTEXT_S>Br. Total</SCRTEXT_S>
+     <SCRTEXT_M>Branches Tot.</SCRTEXT_M>
+     <SCRTEXT_L>Branches Total</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>YCQA_AUNIT_TESTS_FAILED</ROLLNAME>
+    <DDLANGUAGE>D</DDLANGUAGE>
+    <HEADLEN>11</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>15</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Fehlgeschlagene Tests</DDTEXT>
+    <REPTEXT>Fehlgeschl.</REPTEXT>
+    <SCRTEXT_S>Fehlgeschl</SCRTEXT_S>
+    <SCRTEXT_M>Fehlgeschlagen</SCRTEXT_M>
+    <SCRTEXT_L>Fehlgeschl. Tests</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <DATATYPE>INT4</DATATYPE>
+    <LENG>000010</LENG>
+    <OUTPUTLEN>000011</OUTPUTLEN>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>E</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DDTEXT>Number of Failed Tests</DDTEXT>
+     <REPTEXT>Failed</REPTEXT>
+     <SCRTEXT_S>Failed</SCRTEXT_S>
+     <SCRTEXT_M>Failed</SCRTEXT_M>
+     <SCRTEXT_L>Failed Tests</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

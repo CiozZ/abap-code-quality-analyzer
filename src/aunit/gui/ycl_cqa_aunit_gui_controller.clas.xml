@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>YCL_CQA_AUNIT_GUI_CONTROLLER</CLSNAME>
+    <LANGU>D</LANGU>
+    <DESCRIPT>ABAP Unit GUI Controller</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <WITH_UNIT_TESTS>X</WITH_UNIT_TESTS>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>YCL_CQA_AUNIT_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>COMPUTE_PERCENTAGE</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Calculate the percentage of two values.</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YCL_CQA_AUNIT_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>DISPLAY_ALV</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Display list</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YCL_CQA_AUNIT_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>GET_HEADER_FIELDS</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Fill GUI header fields (package, date, totals, ...)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YCL_CQA_AUNIT_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>INIT_ALV</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT> Initialization of ALV Grid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YCL_CQA_AUNIT_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>PROCESS_UCOMM</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Administration of User Command</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>YCL_CQA_AUNIT_GUI_CONTROLLER</CLSNAME>
+     <CMPNAME>READ_DATA</CMPNAME>
+     <LANGU>D</LANGU>
+     <DESCRIPT>Read Unit Test Data</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

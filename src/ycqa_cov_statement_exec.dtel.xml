@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>YCQA_COV_STATEMENT_EXEC</ROLLNAME>
+    <DDLANGUAGE>D</DDLANGUAGE>
+    <HEADLEN>11</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>15</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Anweisungsabdeckung: Anzahl ausgeführt</DDTEXT>
+    <REPTEXT>Anw. ausg.</REPTEXT>
+    <SCRTEXT_S>Anw. ausg.</SCRTEXT_S>
+    <SCRTEXT_M>Anw. ausgef.</SCRTEXT_M>
+    <SCRTEXT_L>Anweisungsabd. ausg.</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <DATATYPE>INT4</DATATYPE>
+    <LENG>000010</LENG>
+    <OUTPUTLEN>000011</OUTPUTLEN>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>E</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DDTEXT>Statement Coverage: Number of Executed Statements</DDTEXT>
+     <REPTEXT>Stat. Exec.</REPTEXT>
+     <SCRTEXT_S>Stat.Exec.</SCRTEXT_S>
+     <SCRTEXT_M>Statem. Exec.</SCRTEXT_M>
+     <SCRTEXT_L>Statements Executed</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

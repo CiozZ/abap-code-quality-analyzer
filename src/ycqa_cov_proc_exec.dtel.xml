@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>YCQA_COV_PROC_EXEC</ROLLNAME>
+    <DDLANGUAGE>D</DDLANGUAGE>
+    <HEADLEN>11</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>15</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Prozedurabdeckung: Anzahl ausgeführt</DDTEXT>
+    <REPTEXT>Pr.ausgef.</REPTEXT>
+    <SCRTEXT_S>Pr.ausgef.</SCRTEXT_S>
+    <SCRTEXT_M>Proz. ausgef.</SCRTEXT_M>
+    <SCRTEXT_L>Prozedurabd. ausgef.</SCRTEXT_L>
+    <DTELMASTER>D</DTELMASTER>
+    <DATATYPE>INT4</DATATYPE>
+    <LENG>000010</LENG>
+    <OUTPUTLEN>000011</OUTPUTLEN>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>E</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DDTEXT>Procedure Coverage: Number of Executed Processing Blocks</DDTEXT>
+     <REPTEXT>Bl. Exec.</REPTEXT>
+     <SCRTEXT_S>Bl. Exec.</SCRTEXT_S>
+     <SCRTEXT_M>Blocks Exec.</SCRTEXT_M>
+     <SCRTEXT_L>Blocks Executed</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
