@@ -3,18 +3,18 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <DD04V>
-    <ROLLNAME>YCQA_AUNIT_OBJTYPE</ROLLNAME>
+    <ROLLNAME>YCQA_AUNIT_EXEC_DATE</ROLLNAME>
     <DDLANGUAGE>D</DDLANGUAGE>
-    <DOMNAME>YCQA_AUNIT_OBJTYPE</DOMNAME>
-    <HEADLEN>05</HEADLEN>
+    <DOMNAME>DATS</DOMNAME>
+    <HEADLEN>10</HEADLEN>
     <SCRLEN1>10</SCRLEN1>
     <SCRLEN2>15</SCRLEN2>
     <SCRLEN3>20</SCRLEN3>
-    <DDTEXT>Unit Test-Objekttyp</DDTEXT>
-    <REPTEXT>Typ</REPTEXT>
-    <SCRTEXT_S>Objekttyp</SCRTEXT_S>
-    <SCRTEXT_M>Objekttyp</SCRTEXT_M>
-    <SCRTEXT_L>Objekttyp</SCRTEXT_L>
+    <DDTEXT>Ausführungsdatum</DDTEXT>
+    <REPTEXT>Ausf.Datum</REPTEXT>
+    <SCRTEXT_S>Ausf.Datum</SCRTEXT_S>
+    <SCRTEXT_M>Ausf.-Datum</SCRTEXT_M>
+    <SCRTEXT_L>Ausführungsdatum</SCRTEXT_L>
     <DTELMASTER>D</DTELMASTER>
     <REFKIND>D</REFKIND>
    </DD04V>
@@ -24,11 +24,11 @@
    <DD04_TEXTS>
     <item>
      <DDLANGUAGE>E</DDLANGUAGE>
-     <DDTEXT>Unit Test Object Type</DDTEXT>
-     <REPTEXT>Type</REPTEXT>
-     <SCRTEXT_S>Obj. Type</SCRTEXT_S>
-     <SCRTEXT_M>Object Type</SCRTEXT_M>
-     <SCRTEXT_L>Object Type</SCRTEXT_L>
+     <DDTEXT>Execution Date</DDTEXT>
+     <REPTEXT>Exec. Date</REPTEXT>
+     <SCRTEXT_S>Exec. Date</SCRTEXT_S>
+     <SCRTEXT_M>Execution Date</SCRTEXT_M>
+     <SCRTEXT_L>Execution Date</SCRTEXT_L>
     </item>
    </DD04_TEXTS>
   </asx:values>
