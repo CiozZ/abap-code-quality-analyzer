@@ -31,6 +31,7 @@ CLASS ycl_cqa_aunit_gui_controller DEFINITION
     METHODS init_alv .
     "! <p class="shorttext synchronized" lang="de">Display list</p>
     METHODS display_alv .
+
     "! <p class="shorttext synchronized" lang="de">Calculate the percentage of two values.</p>
     "! @parameter iv_value_1 |
     "! @parameter iv_value_2 |
@@ -41,6 +42,7 @@ CLASS ycl_cqa_aunit_gui_controller DEFINITION
         !iv_value_2          TYPE i
       RETURNING
         VALUE(rv_percentage) TYPE ycqa_proc_pr .
+
     METHODS get_header_fields
       RETURNING
         VALUE(rs_header_fields) TYPE ycqa_aunit_dynpro_fields_s .
@@ -82,7 +84,7 @@ CLASS ycl_cqa_aunit_gui_controller IMPLEMENTATION.
 
   METHOD compute_percentage.
 
-    CHECK iv_value_1 GT 0.
+    CHECK iv_value_1 >= 0.
 
     rv_percentage = (  iv_value_2 * 100 ) / iv_value_1.
 
@@ -99,9 +101,7 @@ CLASS ycl_cqa_aunit_gui_controller IMPLEMENTATION.
   METHOD create_alv_gui_container.
 
     IF mo_alv_container IS NOT BOUND.
-      mo_alv_container = NEW cl_gui_custom_container(
-        container_name = mc_alv_container
-      ).
+      mo_alv_container = NEW cl_gui_custom_container( container_name = mc_alv_container ).
     ENDIF.
 
   ENDMETHOD.
@@ -151,9 +151,6 @@ CLASS ycl_cqa_aunit_gui_controller IMPLEMENTATION.
 
   METHOD get_header_fields.
 
-    rs_header_fields-devclass = mv_devclass.
-    rs_header_fields-exec_date = mv_exec_date.
-
     DATA: lv_tests_total         TYPE  ycqa_aunit_tests_total,
           lv_tests_failed        TYPE  ycqa_aunit_tests_failed,
           lv_cov_branch_total    TYPE  ycqa_cov_branch_total,
@@ -162,6 +159,9 @@ CLASS ycl_cqa_aunit_gui_controller IMPLEMENTATION.
           lv_cov_proc_exec       TYPE  ycqa_cov_proc_exec,
           lv_cov_statement_total TYPE  ycqa_cov_statement_total,
           lv_cov_statement_exec  TYPE  ycqa_cov_statement_exec.
+
+    rs_header_fields-devclass = mv_devclass.
+    rs_header_fields-exec_date = mv_exec_date.
 
     LOOP AT mt_aunit_data ASSIGNING FIELD-SYMBOL(<aunit_data>).
       lv_tests_total           = lv_tests_total         + <aunit_data>-tests_total.

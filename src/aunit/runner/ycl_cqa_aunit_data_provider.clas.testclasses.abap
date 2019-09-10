@@ -1,4 +1,4 @@
-CLASS ltd_aunit_result_stub DEFINITION FINAL FOR TESTING
+CLASS ltc_aunit_result_stub DEFINITION FINAL FOR TESTING
   INHERITING FROM ycl_cqa_aunit_rslt_preparation
   DURATION SHORT
   RISK LEVEL HARMLESS.
@@ -7,7 +7,7 @@ CLASS ltd_aunit_result_stub DEFINITION FINAL FOR TESTING
 ENDCLASS.
 
 
-CLASS ltd_aunit_result_stub IMPLEMENTATION.
+CLASS ltc_aunit_result_stub IMPLEMENTATION.
 ENDCLASS.
 
 CLASS ltd_code_cvrg_grabber_stub DEFINITION FINAL FOR TESTING

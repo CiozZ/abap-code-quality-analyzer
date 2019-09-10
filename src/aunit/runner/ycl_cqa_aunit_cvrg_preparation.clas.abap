@@ -40,7 +40,7 @@ CLASS ycl_cqa_aunit_cvrg_preparation IMPLEMENTATION.
 
     LOOP AT mt_object_list ASSIGNING FIELD-SYMBOL(<object>).
       DATA(lv_progname) = cl_aunit_prog_info=>tadir_to_progname( obj_type = <object>-element->dev_elem_type
-                                                                 obj_name = CONV #( <object>-element->dev_elem_key ) ) .
+                                                                 obj_name = CONV #( <object>-element->dev_elem_key ) ).
 
       TRY.
           DATA(lo_result) = mo_coverage_measurement->build_program_result( lv_progname ).

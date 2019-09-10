@@ -1,4 +1,4 @@
-CLASS ltcl_aunit_dao_out DEFINITION FINAL FOR TESTING
+CLASS ltc_aunit_dao_out DEFINITION FINAL FOR TESTING
   DURATION SHORT
   RISK LEVEL HARMLESS.
 
@@ -13,7 +13,7 @@ CLASS ltcl_aunit_dao_out DEFINITION FINAL FOR TESTING
 ENDCLASS.
 
 
-CLASS ltcl_aunit_dao_out IMPLEMENTATION.
+CLASS ltc_aunit_dao_out IMPLEMENTATION.
 
   METHOD setup.
     mo_cut = NEW ycl_cqa_aunit_dao_out( io_aunit_res_db = NEW lcl_cqa_aunit_res_db_double( ) ).
