@@ -1,4 +1,4 @@
-CLASS ltcl_aunit_dao_in DEFINITION FINAL FOR TESTING
+CLASS ltc_aunit_dao_in DEFINITION FINAL FOR TESTING
   DURATION SHORT
   RISK LEVEL HARMLESS.
 
@@ -12,7 +12,7 @@ CLASS ltcl_aunit_dao_in DEFINITION FINAL FOR TESTING
 ENDCLASS.
 
 
-CLASS ltcl_aunit_dao_in IMPLEMENTATION.
+CLASS ltc_aunit_dao_in IMPLEMENTATION.
 
   METHOD setup.
     mo_cut = NEW ycl_cqa_aunit_dao_in( NEW lcl_cqa_aunit_res_db_double( ) ).
@@ -34,7 +34,7 @@ CLASS ltcl_aunit_dao_in IMPLEMENTATION.
                                                                                                                                 cov_proc_total = '99.00'
                                                                                                                                 cov_proc_exec = '98.00'
                                                                                                                                 cov_statement_total = '97.00'
-                                                                                                                                cov_statement_exec = '96.00') ) ) ).
+                                                                                                                                cov_statement_exec = '96.00' ) ) ) ).
   ENDMETHOD.
 
 ENDCLASS.

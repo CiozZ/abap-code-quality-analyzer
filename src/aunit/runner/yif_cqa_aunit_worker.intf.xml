@@ -4,7 +4,7 @@
   <asx:values>
    <VSEOINTERF>
     <CLSNAME>YIF_CQA_AUNIT_WORKER</CLSNAME>
-    <LANGU>E</LANGU>
+    <LANGU>D</LANGU>
     <DESCRIPT>Interface - KPI determination</DESCRIPT>
     <EXPOSURE>2</EXPOSURE>
     <STATE>1</STATE>

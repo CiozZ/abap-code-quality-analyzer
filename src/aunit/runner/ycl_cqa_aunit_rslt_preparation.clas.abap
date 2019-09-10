@@ -10,20 +10,22 @@ CLASS ycl_cqa_aunit_rslt_preparation DEFINITION
         class   TYPE stringval,
         method  TYPE stringval,
         title   TYPE stringval,
-      END OF ty_s_alerts,
+      END OF ty_s_alerts.
 
-      tt_alerts TYPE STANDARD TABLE OF ty_s_alerts WITH NON-UNIQUE DEFAULT KEY,
+    TYPES:
+      tt_alerts TYPE STANDARD TABLE OF ty_s_alerts WITH NON-UNIQUE DEFAULT KEY.
 
+    TYPES:
       BEGIN OF ty_s_methods,
         program TYPE progname,
         class   TYPE stringval,
         method  TYPE stringval,
         summary TYPE if_aunit_info_step_end=>ty_s_alert_summary,
-      END OF ty_s_methods,
+      END OF ty_s_methods.
 
-      tt_methods        TYPE STANDARD TABLE OF ty_s_methods WITH NON-UNIQUE DEFAULT KEY,
+    TYPES tt_methods        TYPE STANDARD TABLE OF ty_s_methods WITH NON-UNIQUE DEFAULT KEY.
 
-      tt_alerts_summary TYPE STANDARD TABLE OF if_aunit_info_step_end=>ty_s_alert_summary WITH NON-UNIQUE DEFAULT KEY.
+    TYPES tt_alerts_summary TYPE STANDARD TABLE OF if_aunit_info_step_end=>ty_s_alert_summary WITH NON-UNIQUE DEFAULT KEY.
 
     INTERFACES if_aunit_listener.
 

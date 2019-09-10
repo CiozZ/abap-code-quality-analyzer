@@ -15,12 +15,12 @@ CLASS ltc_code_coverage_grabber IMPLEMENTATION.
 
     DATA(lo_worker) = NEW ycl_cqa_aunit_worker( ).
 
-    DATA(lo_package) = cl_package=>s_get_package( 'ZFI_EK_GF'  ).
+    DATA(lo_package) = cl_package=>s_get_package( 'ZFI_EK_GF' ).
     cl_pak_dev_element=>factory2(
         EXPORTING i_dev_elem_type = 'CLAS' i_dev_elem_key = 'ZCL_GF_ERMITTLUNG'
         IMPORTING e_dev_element = DATA(lo_element) ).
 
-    data(lt_object_list) = VALUE yif_cqa_aunit_package_query=>tt_development_elements(
+    DATA(lt_object_list) = VALUE yif_cqa_aunit_package_query=>tt_development_elements(
                                    ( element = lo_element
                                      package = lo_package ) ).
 
@@ -49,13 +49,12 @@ CLASS ltc_code_coverage_grabber IMPLEMENTATION.
     ENDTRY.
 
     DATA(lv_check_name) = cl_aunit_prog_info=>tadir_to_progname(
-      EXPORTING
         obj_type = 'CLAS'
         obj_name = 'ZCL_GF_ERMITTLUNG' ).
 
     DATA(lo_result_object) = lo_cut->get_result_object( lv_check_name ).
 
-    data(lo_branch) = lo_result_object->get_coverage( ce_scv_coverage_type=>branch ).
+    DATA(lo_branch) = lo_result_object->get_coverage( ce_scv_coverage_type=>branch ).
 
     cl_abap_unit_assert=>assert_bound(
         act              = lo_result_object

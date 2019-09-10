@@ -7,7 +7,7 @@ ENDCLASS.
 CLASS lcl_cqa_aunit_res_db_double IMPLEMENTATION.
 
   METHOD yif_cqa_aunit_res_db~insert_db.
-    ##TODO " Test der korrekten Daten ggf. via Memory Schreiben und in Testmethode auslesen um zu prüfen, ob Daten korrekt erzeugt wurden
+    ##TODO "Test der korrekten Daten ggf. via Memory Schreiben und in Testmethode auslesen um zu pruefen, ob Daten korrekt erzeugt wurden
     DATA(lv_time) = sy-uzeit.
     rv_execution_okay_code = COND #( WHEN it_db_result = VALUE yif_cqa_aunit_res_db_dao=>tt_aunit_db_data( ( execution_date = sy-datum
                                                                                                         execution_time = lv_time

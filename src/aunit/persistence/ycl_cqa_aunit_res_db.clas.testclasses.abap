@@ -1,4 +1,4 @@
-CLASS ltcl_aunit_res_dab DEFINITION FINAL FOR TESTING
+CLASS ltc_aunit_res_dab DEFINITION FINAL FOR TESTING
   DURATION SHORT
   RISK LEVEL HARMLESS.
 
@@ -11,16 +11,16 @@ CLASS ltcl_aunit_res_dab DEFINITION FINAL FOR TESTING
 ENDCLASS.
 
 
-CLASS ltcl_aunit_res_dab IMPLEMENTATION.
+CLASS ltc_aunit_res_dab IMPLEMENTATION.
 
   METHOD setup.
-    mo_cut = NEW ycl_cqa_aunit_res_db( new lcl_aunit_red_db_dao_double( ) ).
+    mo_cut = NEW ycl_cqa_aunit_res_db( NEW lcl_aunit_red_db_dao_double( ) ).
   ENDMETHOD.
 
   METHOD read_from_db.
     cl_abap_unit_assert=>assert_equals( exp = VALUE yif_cqa_aunit_res_db_dao=>tt_aunit_db_data(
-    ( execution_date = '20190830' execution_time = '230000' package_name = 'YCQA_AUNIT_GUI' object_name = 'CLASSB' object_type = 'CLASS')
-    ( execution_date = '20190830' execution_time = '230000' package_name = 'YCQA_AUNIT_PERSISTENCE' object_name = 'CLASSA' object_type = 'CLASS')
+    ( execution_date = '20190830' execution_time = '230000' package_name = 'YCQA_AUNIT_GUI' object_name = 'CLASSB' object_type = 'CLASS' )
+    ( execution_date = '20190830' execution_time = '230000' package_name = 'YCQA_AUNIT_PERSISTENCE' object_name = 'CLASSA' object_type = 'CLASS' )
     )
                                         act = mo_cut->read_from_db( iv_execution_date = '20190830' iv_package_name = 'YCQA_AUNIT' ) ).
   ENDMETHOD.

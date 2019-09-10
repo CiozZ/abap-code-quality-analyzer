@@ -1,6 +1,6 @@
 INTERFACE yif_cqa_aunit_dao_in
 
-  PUBLIC .
+  PUBLIC.
   TYPES: BEGIN OF ts_aunit_result,
            execution_date      TYPE ycqa_aunit_exec_date,
            execution_time      TYPE ycqa_aunit_exec_time,

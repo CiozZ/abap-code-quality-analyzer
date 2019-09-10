@@ -10,7 +10,7 @@
     <SCRLEN1>10</SCRLEN1>
     <SCRLEN2>15</SCRLEN2>
     <SCRLEN3>20</SCRLEN3>
-    <DDTEXT>Unit Test Object Type</DDTEXT>
+    <DDTEXT>Unit Test-Objekttyp</DDTEXT>
     <REPTEXT>Typ</REPTEXT>
     <SCRTEXT_S>Objekttyp</SCRTEXT_S>
     <SCRTEXT_M>Objekttyp</SCRTEXT_M>
@@ -18,6 +18,19 @@
     <DTELMASTER>D</DTELMASTER>
     <REFKIND>D</REFKIND>
    </DD04V>
+   <I18N_LANGS>
+    <LANGU>E</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DDTEXT>Unit Test Object Type</DDTEXT>
+     <REPTEXT>Type</REPTEXT>
+     <SCRTEXT_S>Obj. Type</SCRTEXT_S>
+     <SCRTEXT_M>Object Type</SCRTEXT_M>
+     <SCRTEXT_L>Object Type</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
   </asx:values>
  </asx:abap>
 </abapGit>

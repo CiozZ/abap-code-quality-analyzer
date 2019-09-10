@@ -1,8 +1,8 @@
 *******************************************************************
 *   System-defined Include-files.                                 *
 *******************************************************************
-  INCLUDE LYCQA_AUNIT_GUITOP.                " Global Declarations
-  INCLUDE LYCQA_AUNIT_GUIUXX.                " Function Modules
+  INCLUDE lycqa_aunit_guitop.                " Global Declarations
+  INCLUDE lycqa_aunit_guiuxx.                " Function Modules
 
 *******************************************************************
 *   User-defined Include-files (if necessary).                    *
@@ -14,8 +14,8 @@
 * INCLUDE LYCQA_AUNIT_GUIP...                " Local class implement.
 * INCLUDE LYCQA_AUNIT_GUIT99.                " ABAP Unit tests
 
-INCLUDE lycqa_aunit_guio01.
+  INCLUDE lycqa_aunit_guio01.
 
-INCLUDE lycqa_aunit_guii01.
+  INCLUDE lycqa_aunit_guii01.
 
-INCLUDE lycqa_aunit_guio02.
+  INCLUDE lycqa_aunit_guio02.

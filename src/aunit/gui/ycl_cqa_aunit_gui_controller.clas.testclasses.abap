@@ -23,7 +23,6 @@ CLASS ltc_controller IMPLEMENTATION.
   METHOD compute_percentage.
 
     cl_abap_unit_assert=>assert_equals(
-      EXPORTING
         act                  = mo_cut->compute_percentage(
                                  iv_value_1 = 55
                                  iv_value_2 = 7

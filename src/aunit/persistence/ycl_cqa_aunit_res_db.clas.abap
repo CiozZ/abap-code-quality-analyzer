@@ -40,7 +40,7 @@ CLASS ycl_cqa_aunit_res_db DEFINITION
         IMPORTING
           iv_execute_date                TYPE datum
         RETURNING
-          VALUE(rt_execution_date_range) TYPE yif_cqa_aunit_res_db_dao=>tt_execution_date_range..
+          VALUE(rt_execution_date_range) TYPE yif_cqa_aunit_res_db_dao=>tt_execution_date_range.
 ENDCLASS.
 
 CLASS ycl_cqa_aunit_res_db IMPLEMENTATION.
@@ -109,7 +109,7 @@ CLASS ycl_cqa_aunit_res_db IMPLEMENTATION.
   ENDMETHOD.
 
   METHOD constructor.
-    mo_res_db_dao = COND #( WHEN io_db_dao IS BOUND THEN io_db_dao ELSE NEW ycl_cqa_aunit_res_db_dao(  ) ).
+    mo_res_db_dao = COND #( WHEN io_db_dao IS BOUND THEN io_db_dao ELSE NEW ycl_cqa_aunit_res_db_dao( ) ).
   ENDMETHOD.
 
 ENDCLASS.
