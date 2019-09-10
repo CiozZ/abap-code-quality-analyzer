@@ -1,4 +1,4 @@
-#ABAP Code Quality Analyzer
+# ABAP Code Quality Analyzer
 
 Run ABAP unit tests and measures execution and test coverage.
 
