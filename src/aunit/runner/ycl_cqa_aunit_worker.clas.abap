@@ -20,18 +20,12 @@ CLASS ycl_cqa_aunit_worker DEFINITION
     CONSTANTS mc_pgmid_r3tr TYPE string VALUE 'R3TR' ##NO_TEXT.
     CONSTANTS mc_equal_sign TYPE string VALUE `=` ##NO_TEXT.
 
-
-
-
-
     METHODS get_aunit_results
       IMPORTING
                 it_object_list            TYPE yif_cqa_aunit_package_query=>tt_development_elements
                 io_aunit_cvrg_preparation TYPE REF TO ycl_cqa_aunit_cvrg_preparation
                 io_aunit_rslt_preparation TYPE REF TO ycl_cqa_aunit_rslt_preparation
       RAISING   cx_scv_execution_error.
-
-
 
     METHODS run_unit_tests
       IMPORTING
@@ -58,8 +52,6 @@ CLASS ycl_cqa_aunit_worker DEFINITION
 
 ENDCLASS.
 
-
-
 CLASS ycl_cqa_aunit_worker IMPLEMENTATION.
 
 
@@ -70,7 +62,6 @@ CLASS ycl_cqa_aunit_worker IMPLEMENTATION.
         io_coverage_measurement = io_test_run_task->get_coverage_measurement( ) ).
 
   ENDMETHOD.
-
 
   METHOD get_aunit_results.
 
@@ -91,12 +82,11 @@ CLASS ycl_cqa_aunit_worker IMPLEMENTATION.
 
       rt_unit_test_table = VALUE #( BASE rt_unit_test_table (
           object = ls_data-element->dev_elem_type
-          obj_name = ls_data-element->dev_elem_key ) ) .
+          obj_name = ls_data-element->dev_elem_key ) ).
 
     ENDLOOP.
 
   ENDMETHOD.
-
 
   METHOD prepare_and_run_tests.
 
@@ -123,7 +113,6 @@ CLASS ycl_cqa_aunit_worker IMPLEMENTATION.
   METHOD yif_cqa_aunit_worker~run_aunit_kpi.
 
     get_aunit_results(
-      EXPORTING
         it_object_list = it_object_list
         io_aunit_cvrg_preparation = io_aunit_cvrg_preparation
         io_aunit_rslt_preparation      = io_aunit_rslt_preparation

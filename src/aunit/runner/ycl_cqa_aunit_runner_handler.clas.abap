@@ -3,16 +3,26 @@ CLASS ycl_cqa_aunit_runner_handler DEFINITION
   CREATE PUBLIC .
 
   PUBLIC SECTION.
-    DATA mo_aunit_data_provider TYPE REF TO ycl_cqa_aunit_data_provider READ-ONLY.
 
+    "! <p class="shorttext synchronized" lang="de">Data Provider getter.</p>
+    "! @parameter ro_dataprovider |
+    METHODS
+      get_data_provider
+        RETURNING VALUE(ro_dataprovider) TYPE REF TO ycl_cqa_aunit_data_provider.
+
+    "! <p class="shorttext synchronized" lang="de">Runner start method</p>
+    "! @parameter it_packages |
+    "! @raising cx_scv_execution_error |
     METHODS run
       IMPORTING
         it_packages TYPE scompaksel
       RAISING
         cx_scv_execution_error.
+
+  PRIVATE SECTION.
+    DATA mo_aunit_data_provider TYPE REF TO ycl_cqa_aunit_data_provider.
+
 ENDCLASS.
-
-
 
 CLASS ycl_cqa_aunit_runner_handler IMPLEMENTATION.
   METHOD run.
@@ -41,6 +51,10 @@ CLASS ycl_cqa_aunit_runner_handler IMPLEMENTATION.
 
     mo_aunit_data_provider->save_results_in_db( ).
 
+  ENDMETHOD.
+
+  METHOD get_data_provider.
+    ro_dataprovider = mo_aunit_data_provider.
   ENDMETHOD.
 
 ENDCLASS.

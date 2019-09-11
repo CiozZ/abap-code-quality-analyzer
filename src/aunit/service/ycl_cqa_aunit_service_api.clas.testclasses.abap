@@ -22,7 +22,7 @@ CLASS ltc_service_api IMPLEMENTATION.
 
   METHOD setup.
     DATA(lo_persistence) = NEW lcl_persistence_test_double( ).
-    CREATE OBJECT mo_cut EXPORTING io_persistence = lo_persistence.
+    mo_cut = NEW #( lo_persistence ).
   ENDMETHOD.
 
   METHOD run_without_package.

@@ -21,8 +21,8 @@ CLASS ltc_aunit_runner IMPLEMENTATION.
 
 
     cl_abap_unit_assert=>assert_bound(
-        act = lo_cut->mo_aunit_data_provider
-        msg = |Es sollte eine Collection zurück geliefert werden|
+        act = lo_cut->get_data_provider( )
+        msg = |Es sollte eine Collection zurueck geliefert werden|
     ).
 
     cl_abap_unit_assert=>assert_not_bound(

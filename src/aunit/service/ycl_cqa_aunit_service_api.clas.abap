@@ -43,7 +43,7 @@ CLASS ycl_cqa_aunit_service_api IMPLEMENTATION.
   METHOD check_date.
     IF iv_exec_date IS NOT INITIAL.
       CALL FUNCTION 'DATE_CHECK_PLAUSIBILITY' EXPORTING date = iv_exec_date EXCEPTIONS OTHERS = 1.
-      IF sy-subrc NE 0.
+      IF sy-subrc <> 0.
         RAISE EXCEPTION TYPE ycx_cqa_aunit_service_api.
       ENDIF.
     ENDIF.

@@ -26,7 +26,7 @@ CLASS ltc_aunit IMPLEMENTATION.
 
   METHOD build_object_list.
 
-    DATA(lo_package) = cl_package=>s_get_package( 'ZFI_EK_GF'  ).
+    DATA(lo_package) = cl_package=>s_get_package( 'ZFI_EK_GF' ).
     cl_pak_dev_element=>factory2(
         EXPORTING i_dev_elem_type = 'CLAS' i_dev_elem_key = 'ZCL_GF_ERMITTLUNG'
         IMPORTING e_dev_element = DATA(lo_element) ).
@@ -52,7 +52,6 @@ CLASS ltc_aunit IMPLEMENTATION.
     DATA(lt_object_list) = build_object_list( ).
     TRY.
         mo_cut->yif_cqa_aunit_worker~run_aunit_kpi(
-          EXPORTING
             it_object_list      = lt_object_list
             io_aunit_cvrg_preparation = lo_aunit_cvrg_preparation
             io_aunit_rslt_preparation     = lo_aunit_rslt_preparation
@@ -77,7 +76,6 @@ CLASS ltc_aunit IMPLEMENTATION.
 
     DATA(lo_list_result) = lt_result_list[ 1 ].
     DATA(lv_check_name) = cl_aunit_prog_info=>tadir_to_progname(
-      EXPORTING
         obj_type = 'CLAS'
         obj_name = 'ZCL_GF_ERMITTLUNG' ).
 
