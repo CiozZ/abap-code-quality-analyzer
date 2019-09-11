@@ -1,3 +1,5 @@
+[![abaplint](https://app.abaplint.org/badges/css-ch/abap-code-quality-analyzer)](https://app.abaplint.org/project/css-ch/abap-code-quality-analyzer)
+
 # ABAP Code Quality Analyzer
 
 Run ABAP unit tests and measures execution and test coverage.
