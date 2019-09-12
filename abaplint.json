@@ -16,7 +16,12 @@
   "syntax": {
     "version": "v755",
     "errorNamespace": "^(Z|Y)",
-    "globalConstants": [],
+    "globalConstants": [
+      "go_controller",
+      "gv_ucomm",
+      "element",
+      "if_aucv_cvrg_rslt_provider"
+    ],
     "globalMacros": []
   },
   "rules": {
