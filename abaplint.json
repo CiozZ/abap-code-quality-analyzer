@@ -114,7 +114,9 @@
     "empty_line_in_statement": {
       "enabled": true,
       "exclude": [
-        "/src/aunit/service/ycl_cqa_aunit_service_tdouble.clas.abap"
+        "/src/aunit/service/ycl_cqa_aunit_service_tdouble.clas.abap",
+        "/src/aunit/persistence/yif_cqa_aunit_dao_in.intf.abap"
+
       ],
       "allowChained": false
     },
