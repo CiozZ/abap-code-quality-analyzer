@@ -14,13 +14,14 @@
     }
   ],
   "syntax": {
-    "version": "v755",
+    "version": "v750",
     "errorNamespace": "^(Z|Y)",
     "globalConstants": [
       "go_controller",
       "gv_ucomm",
       "element",
-      "if_aucv_cvrg_rslt_provider"
+      "if_aucv_cvrg_rslt_provider",
+      "ycqa_aunit_dynpro_fields_s"
     ],
     "globalMacros": []
   },
@@ -62,7 +63,11 @@
     },
     "check_variables": {
       "enabled": true,
-      "exclude": []
+      "exclude": [
+        "/src/aunit/runner/ycl_cqa_aunit_rslt_preparation.clas.abap",
+        "/src/aunit/runner/ycl_cqa_aunit_cvrg_preparation.clas.abap",
+        "/src/aunit/runner/ycl_cqa_aunit_data_provider.clas.testclasses.abap"
+      ]
     },
     "class_attribute_names": {
       "enabled": true,
@@ -108,7 +113,9 @@
     },
     "empty_line_in_statement": {
       "enabled": true,
-      "exclude": [],
+      "exclude": [
+        "/src/aunit/service/ycl_cqa_aunit_service_tdouble.clas.abap"
+      ],
       "allowChained": false
     },
     "empty_statement": {
@@ -127,7 +134,7 @@
       "at": true
     },
     "exit_or_check": {
-      "enabled": true,
+      "enabled": false,
       "exclude": []
     },
     "exporting": {
@@ -157,7 +164,11 @@
     },
     "implement_methods": {
       "enabled": true,
-      "exclude": []
+      "exclude": [
+        "/src/aunit/runner/ycl_cqa_aunit_rslt_preparation.clas.abap",
+        "/src/aunit/runner/ycl_cqa_aunit_data_provider.clas.testclasses.abap",
+        "/src/aunit/runner/ycl_cqa_aunit_cvrg_preparation.clas.abap"
+      ]
     },
     "in_statement_indentation": {
       "enabled": false,
@@ -184,7 +195,7 @@
       "ignoreLowerClassImplmentationStatement": true,
       "ignoreGlobalClassDefinition": false,
       "ignoreGlobalInterface": false,
-      "ignoreFunctionModuleName": false
+      "ignoreFunctionModuleName": true
     },
     "line_length": {
       "enabled": false,
@@ -200,7 +211,7 @@
       "enabled": true,
       "exclude": [],
       "local": "^LCL_.*$",
-      "test": "^LTC_.*$"
+      "test": "^LT(C|D)_.*$"
     },
     "local_testclass_location": {
       "enabled": true,
