@@ -46,35 +46,20 @@ CLASS ycl_cqa_aunit_gui_controller DEFINITION
     METHODS get_header_fields
       RETURNING
         VALUE(rs_header_fields) TYPE ycqa_aunit_dynpro_fields_s .
-  PROTECTED SECTION.
-
-
   PRIVATE SECTION.
 
-    DATA mo_service TYPE REF TO yif_cqa_aunit_service_api.
+    DATA mo_service TYPE REF TO yif_cqa_aunit_service_api .
+    DATA mo_alv TYPE REF TO cl_salv_table .
+    DATA mo_alv_container TYPE REF TO cl_gui_custom_container .
+    DATA mt_aunit_data TYPE ycqa_aunit_ext_resp_t .
+    DATA mv_devclass TYPE devclass .
+    DATA mv_exec_date TYPE ycqa_aunit_exec_date .
+    DATA mv_ucomm TYPE syucomm .
 
-    DATA mo_alv TYPE REF TO cl_salv_table.
-    DATA mo_alv_container TYPE REF TO cl_gui_custom_container.
-
-    DATA mt_aunit_data            TYPE        ycqa_aunit_ext_resp_t.
-    DATA mt_field_catalog         TYPE        lvc_t_fcat.
-
-    DATA mv_devclass  TYPE devclass.
-    DATA mv_exec_date TYPE ycqa_aunit_exec_date.
-    DATA mv_ucomm TYPE syucomm.
-
-
-    METHODS
-      enable_toolbar.
-
-
-    METHODS create_alv_gui_container.
-
-
-    METHODS create_salv_instance.
-    METHODS setup_layout.
-
-
+    METHODS enable_toolbar .
+    METHODS create_alv_gui_container .
+    METHODS create_salv_instance .
+    METHODS setup_layout .
 ENDCLASS.
 
 
@@ -213,6 +198,7 @@ CLASS ycl_cqa_aunit_gui_controller IMPLEMENTATION.
 
   ENDMETHOD.
 
+
   METHOD setup_layout.
 
     DATA(lo_layout) = mo_alv->get_layout( ).
@@ -226,5 +212,4 @@ CLASS ycl_cqa_aunit_gui_controller IMPLEMENTATION.
     lo_layout->set_default( abap_true ).
 
   ENDMETHOD.
-
 ENDCLASS.
