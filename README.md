@@ -67,4 +67,5 @@ This project is licensed under the License AGPL 3.0
 Future Features:
 * Code Inspector Analyzer (SCI)
 * Code Coverage Analyzer (SCOV)
+* OData Services
 
