@@ -36,18 +36,15 @@
        <PARAMETER>IV_DEVCLASS</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Paket</STEXT>
-       <INDEX> 001</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>IV_EXEC_DATE</PARAMETER>
        <KIND>P</KIND>
        <STEXT>Ausführungsdatum</STEXT>
-       <INDEX> 002</INDEX>
       </RSFDO>
       <RSFDO>
        <PARAMETER>IV_TESTMODE</PARAMETER>
        <KIND>P</KIND>
-       <INDEX> 003</INDEX>
       </RSFDO>
      </DOCUMENTATION>
     </item>
