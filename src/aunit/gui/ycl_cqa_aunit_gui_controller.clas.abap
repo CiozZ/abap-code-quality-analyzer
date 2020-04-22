@@ -5,7 +5,7 @@ CLASS ycl_cqa_aunit_gui_controller DEFINITION
 
   PUBLIC SECTION.
 
-    CONSTANTS mc_alv_container TYPE oio_cntnr_name VALUE 'CONTAINER_ALV' ##NO_TEXT.
+    CONSTANTS mc_alv_container TYPE c LENGTH 30 VALUE 'CONTAINER_ALV' ##NO_TEXT.
     CONSTANTS:
       BEGIN OF mc_ucomm,
         back   TYPE syucomm VALUE 'BACK',

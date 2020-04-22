@@ -6,6 +6,7 @@
     <DDLNAME>YCQA_CDS_PACKAGE_LIST</DDLNAME>
     <DDLANGUAGE>D</DDLANGUAGE>
     <DDTEXT>CDS für YCQA</DDTEXT>
+    <SOURCE_TYPE>V</SOURCE_TYPE>
    </DDLS>
   </asx:values>
  </asx:abap>

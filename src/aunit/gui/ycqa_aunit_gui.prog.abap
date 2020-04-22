@@ -1,6 +1,6 @@
 REPORT ycqa_aunit_gui.
 
-PARAMETERS: p_devcl  TYPE devclass OBLIGATORY DEFAULT 'ZFI_EK',
+PARAMETERS: p_devcl  TYPE devclass OBLIGATORY DEFAULT 'Z*',
             p_excdat TYPE ycqa_aunit_exec_date DEFAULT sy-datum,
             p_testmd AS CHECKBOX DEFAULT abap_false.
 

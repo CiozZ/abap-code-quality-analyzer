@@ -6,6 +6,7 @@
     <DDLNAME>YCQA_CDS_STATEMENT_SUMMARY</DDLNAME>
     <DDLANGUAGE>D</DDLANGUAGE>
     <DDTEXT>Statement Summary</DDTEXT>
+    <SOURCE_TYPE>V</SOURCE_TYPE>
    </DDLS>
   </asx:values>
  </asx:abap>

@@ -6,6 +6,7 @@
     <DDLNAME>YCQA_CDS_TOP_OBJECTS</DDLNAME>
     <DDLANGUAGE>D</DDLANGUAGE>
     <DDTEXT>CDS for top objects</DDTEXT>
+    <SOURCE_TYPE>V</SOURCE_TYPE>
    </DDLS>
   </asx:values>
  </asx:abap>

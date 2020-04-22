@@ -6,6 +6,7 @@
     <DDLNAME>YCQA_CDS_TOP_OBJECTS_PERCENT</DDLNAME>
     <DDLANGUAGE>D</DDLANGUAGE>
     <DDTEXT>Prozentberechnung zu View YCQA_CDS_TOP_OBJECTS</DDTEXT>
+    <SOURCE_TYPE>V</SOURCE_TYPE>
    </DDLS>
   </asx:values>
  </asx:abap>
